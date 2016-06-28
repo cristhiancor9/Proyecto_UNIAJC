@@ -6,6 +6,7 @@
     <table>
         @foreach($habilidades as $habilidad)
             <tr><td>{{ $habilidad->nombre }}</td></tr> <!-- Si te fijas usas $torre->polaridad->tipo_polaridad desde ahí accedes al modelo Polaridad y a sus atributos-->
+       prueba 1
         @endforeach
     </table>
    
