@@ -25,7 +25,7 @@
         }
         .banner_uni{
             padding: 0.8%;
-            background-color: #ffe500;
+            background-color: #fff500;
         }
         .panel_uni{
             background-color: #337ab7;
@@ -37,7 +37,7 @@
         }
         .logo_uni{
 
-           background-image: url("images/Logo.png");
+           background-image: url("/public/images/Logo.png");
         }
          .dropdown-toggle{
            background-color: #337ab7 !important;
@@ -61,8 +61,7 @@
                 
                 <!-- Branding Image -->
                 <a class="logo_uni" href="{{ url('/') }}">
-                
-                  .. 
+            <img src="{{ url('/') }}/images/Logo.png" />
                 </a>
             </div>
 
