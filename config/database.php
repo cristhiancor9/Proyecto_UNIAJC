@@ -74,7 +74,7 @@ return [
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'db_ejecucioncurso'),
             'username' => env('DB_USERNAME', 'postgres'),
-            'password' => env('DB_PASSWORD', 'desarrollo'),
+            'password' => env('DB_PASSWORD', 'ba1r0n.fr31r3'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
