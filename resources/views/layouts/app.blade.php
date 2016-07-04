@@ -13,7 +13,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    
 
     <style>
         body {
@@ -23,11 +23,32 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .banner_uni{
+            padding: 0.8%;
+            background-color: #ffe500;
+        }
+        .panel_uni{
+            background-color: #337ab7;
+            color: #ffffff;
+        }
+        .panel_uni_title{
+
+             padding: 0.8%;
+        }
+        .logo_uni{
+
+           background-image: url("images/Logo.png");
+        }
+         .dropdown-toggle{
+           background-color: #337ab7 !important;
+            color: #ffffff !important;
+
+        }
     </style>
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
+        <div class="banner_uni">
             <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->
@@ -37,10 +58,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
+                
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                <a class="logo_uni" href="{{ url('/') }}">
+                
+                  .. 
                 </a>
             </div>
 
@@ -63,7 +85,7 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Salida segura</a></li>
                             </ul>
                         </li>
                     @endif

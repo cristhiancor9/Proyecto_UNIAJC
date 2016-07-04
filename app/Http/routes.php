@@ -16,10 +16,10 @@
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/', 'HabilidadController@index');
+    Route::get('/', 'PlanCursoController@index');
 });
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/habilidad', 'HabilidadController@index');
+
