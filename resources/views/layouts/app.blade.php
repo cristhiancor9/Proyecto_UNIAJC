@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
         }
         .banner_uni{
             padding: 0.8%;
-            background-color: #ffe500;
+            background-color: #fff500;
         }
         .panel_uni{
             background-color: #337ab7;
@@ -37,7 +37,7 @@
         }
         .logo_uni{
 
-           background-image: url("images/Logo.png");
+           background-image: url("/public/images/Logo.png");
         }
          .dropdown-toggle{
            background-color: #337ab7 !important;
@@ -61,15 +61,14 @@
                 
                 <!-- Branding Image -->
                 <a class="logo_uni" href="{{ url('/') }}">
-                
-                  .. 
+            <img src="{{ url('/') }}/images/Logo.png" />
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                  <!--  <li><a href="{{ url('/home') }}">Home</a></li> -->
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -77,7 +76,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                         <!--  <li><a href="{{ url('/register') }}">Register</a></li>-->
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
