@@ -20,6 +20,6 @@ Route::group(['middleware' => 'web'], function () {
 });
 Route::auth();
 
-Route::get('/home', 'PlanCursoController@index');
+Route::get('/home', 'HomeController@index');
 
 
